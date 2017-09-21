@@ -8,6 +8,5 @@ target 'RSSReader' do
   # Pods for RSSReader
 	pod 'Alamofire', '~> 4.5'
 	pod 'AlamofireRSSParser', '~> 2.0'
-	pod 'AlamofireObjectMapper', '~> 4.1'
 
 end
