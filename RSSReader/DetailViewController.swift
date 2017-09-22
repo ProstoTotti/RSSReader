@@ -29,7 +29,7 @@ class DetailViewController: UIViewController {
             })
             titleLabel.text = news.title
             descriptionTextView.text = news.descriptionNews
-            dateLabel.text = News.dateFormatter.string(from: news.pubDate)
+            dateLabel.text = "Posted by: \(News.dateFormatter.string(from: news.pubDate))"
         }
 
         // Do any additional setup after loading the view.

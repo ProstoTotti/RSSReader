@@ -12,8 +12,8 @@ import RealmSwift
 class News : Object {
     static let dateFormatter : DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        formatter.timeStyle = .medium
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
         return formatter
     }()
     

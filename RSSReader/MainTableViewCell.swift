@@ -16,7 +16,7 @@ class MainTableViewCell: UITableViewCell {
     
     func updateCell(with new: News,tableView: UITableView) {
         titleLabel?.text = new.title
-        dateLabel?.text = News.dateFormatter.string(from: new.pubDate)
+        dateLabel?.text = "Posted by: \(News.dateFormatter.string(from: new.pubDate))"
         
         if let url = URL(string: new.imageURL) {
             titleImageView.pin_setImage(from: url)
