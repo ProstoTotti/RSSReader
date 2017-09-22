@@ -14,7 +14,7 @@ class MainTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    func updateCell(with new: News,tableView: UITableView) {
+    func updateCell(with new: News) {
         titleLabel?.text = new.title
         dateLabel?.text = "Posted by: \(News.dateFormatter.string(from: new.pubDate))"
         

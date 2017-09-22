@@ -51,7 +51,7 @@ class MainTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainTableViewCell
         let new = news[indexPath.row]
-        cell.updateCell(with: new, tableView: self.tableView)
+        cell.updateCell(with: new)
         return cell
     }
 
