@@ -49,18 +49,9 @@ class MainTVC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MainTableViewCell
         let new = news[indexPath.row]
-        cell.textLabel?.text = new.title
-        cell.detailTextLabel?.text = News.dateFormatter.string(from: new.pubDate)
-        
-        if let url = URL(string: new.imageURL) {
-            cell.imageView?.pin_setImage(from: url, placeholderImage: UIImage(named: "placeholder.png"), completion: { result in
-                if let cellToUpdate = self.tableView.cellForRow(at: indexPath) {
-                    cellToUpdate.setNeedsLayout()
-                }
-            })
-        }
+        cell.updateCell(with: new, tableView: self.tableView)
         return cell
     }
 

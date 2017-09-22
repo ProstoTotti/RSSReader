@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		50751EDE282F844FF3C0904C /* Pods_RSSReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9B834C1896A542A9D5875E9 /* Pods_RSSReader.framework */; };
+		617EC07C1F756D6A0048500C /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617EC07B1F756D6A0048500C /* MainTableViewCell.swift */; };
 		619373ED1F751C98008CAE45 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619373EC1F751C98008CAE45 /* New.swift */; };
 		61AF43E41F753CA500C9D1CF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AF43E31F753CA500C9D1CF /* DetailViewController.swift */; };
 		61CFDCD61F74FBA800ED86F0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CFDCD51F74FBA800ED86F0 /* APIManager.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		110ED36AFED3AE8F4D1DE002 /* Pods-RSSReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSSReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSSReader/Pods-RSSReader.release.xcconfig"; sourceTree = "<group>"; };
+		617EC07B1F756D6A0048500C /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		619373EC1F751C98008CAE45 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		61AF43E31F753CA500C9D1CF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		61CFDCD51F74FBA800ED86F0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				61E544CE1F73EE1E005EE8BC /* ViewController.swift */,
 				61CFDCD51F74FBA800ED86F0 /* APIManager.swift */,
 				61E544D01F73EE1E005EE8BC /* Main.storyboard */,
+				617EC07B1F756D6A0048500C /* MainTableViewCell.swift */,
 				61AF43E31F753CA500C9D1CF /* DetailViewController.swift */,
 				619373EC1F751C98008CAE45 /* New.swift */,
 				61E05A731F75383D00FE25BD /* Placeholder.png */,
@@ -248,6 +251,7 @@
 				61CFDCD61F74FBA800ED86F0 /* APIManager.swift in Sources */,
 				619373ED1F751C98008CAE45 /* New.swift in Sources */,
 				61E544CF1F73EE1E005EE8BC /* ViewController.swift in Sources */,
+				617EC07C1F756D6A0048500C /* MainTableViewCell.swift in Sources */,
 				61AF43E41F753CA500C9D1CF /* DetailViewController.swift in Sources */,
 				61CFDCD81F750AB300ED86F0 /* MainTVC.swift in Sources */,
 				61E544CD1F73EE1E005EE8BC /* AppDelegate.swift in Sources */,
