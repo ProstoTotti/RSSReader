@@ -7,19 +7,40 @@
 //
 
 import UIKit
+import AlamofireRSSParser
+import Alamofire
+import RealmSwift
 
 class ViewController: UIViewController {
-
+    
+    let realm = try! Realm()
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.indicator.startAnimating()
+        APIManager.sharedInstance.getRSSFeedResponse { (response, status) in
+            self.indicator.stopAnimating()
+            try! self.realm.write {
+                if !self.realm.isEmpty {
+                    self.realm.deleteAll()
+                }
+                for item in response!.items {
+                    let newNews = News()
+                    newNews.descriptionNews = APIManager.sharedInstance.parseDescriptionRSS(item.description)!
+                    newNews.imageURL = item.imagesFromDescription!.first!
+                    newNews.imageURLContent = item.mediaContent!
+                    newNews.title = item.title!
+                    newNews.pubDate = item.pubDate!
+                    self.realm.add(newNews)
+                }
+            }
+            self.performSegue(withIdentifier: "main", sender: nil)
+            
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 

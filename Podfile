@@ -8,5 +8,7 @@ target 'RSSReader' do
   # Pods for RSSReader
 	pod 'Alamofire', '~> 4.5'
 	pod 'AlamofireRSSParser', '~> 2.0'
+	pod 'RealmSwift', '3.0.0-beta.3'
+	pod 'PINRemoteImage', '3.0.0-beta.12'
 
 end

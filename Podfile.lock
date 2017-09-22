@@ -2,15 +2,48 @@ PODS:
   - Alamofire (4.5.1)
   - AlamofireRSSParser (2.0.1):
     - Alamofire
+  - FLAnimatedImage (1.0.12)
+  - PINCache (3.0.1-beta.5):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.5)
+    - PINCache/Core (= 3.0.1-beta.5)
+  - PINCache/Arc-exception-safe (3.0.1-beta.5):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.5):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage (3.0.0-beta.12):
+    - PINRemoteImage/FLAnimatedImage (= 3.0.0-beta.12)
+    - PINRemoteImage/PINCache (= 3.0.0-beta.12)
+  - PINRemoteImage/Core (3.0.0-beta.12):
+    - PINOperation
+  - PINRemoteImage/FLAnimatedImage (3.0.0-beta.12):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.12):
+    - PINCache (= 3.0.1-beta.5)
+    - PINRemoteImage/Core
+  - Realm (3.0.0-beta.3):
+    - Realm/Headers (= 3.0.0-beta.3)
+  - Realm/Headers (3.0.0-beta.3)
+  - RealmSwift (3.0.0-beta.3):
+    - Realm (= 3.0.0-beta.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - AlamofireRSSParser (~> 2.0)
+  - PINRemoteImage (= 3.0.0-beta.12)
+  - RealmSwift (= 3.0.0-beta.3)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireRSSParser: 86243cd156b94b9d97d8f915fa44a0f15bd1bfb7
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  PINCache: 98e7b1ef782824ad231ade51987c218b758c30d8
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: 0cefe720c2612960bd360710efbd6c73a1991d5f
+  Realm: 33bd2ac5a5d7649920b131d2e79e2d5c8421da47
+  RealmSwift: a5fb1853c3167912fc5325fe264a410bfe3e2cbc
 
-PODFILE CHECKSUM: 028742d2430f4a868e0e6cf5caa95e7ab49cd3a2
+PODFILE CHECKSUM: 71c15f336942b34300224b15167fb9d8b8a64c29
 
 COCOAPODS: 1.3.1
