@@ -21,8 +21,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.descriptionTextView.scrollRangeToVisible(NSMakeRange(0, 0))
-    //self.descriptionTextView.textscrollRangeToVisible(NSMakeRange(0, 0))
         if let news = news {
             indicator.startAnimating()
             self.indicator.hidesWhenStopped = true

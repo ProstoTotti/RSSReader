@@ -112,15 +112,15 @@
                                     <constraint firstAttribute="height" constant="240" id="zGA-mG-2KT"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi1-8s-EgV">
-                                <rect key="frame" x="10" y="364" width="365" height="303"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi1-8s-EgV">
+                                <rect key="frame" x="10" y="367.5" width="355" height="299.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaY-XI-mrl">
-                                <rect key="frame" x="10" y="314" width="355" height="20.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <rect key="frame" x="10" y="314" width="355" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -128,7 +128,7 @@
                                 <rect key="frame" x="177" y="174" width="20" height="20"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMa-ya-U6x">
-                                <rect key="frame" x="10" y="342" width="355" height="12"/>
+                                <rect key="frame" x="10" y="345.5" width="355" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -141,7 +141,7 @@
                             <constraint firstItem="ooj-XV-463" firstAttribute="trailing" secondItem="3cu-kB-beg" secondAttribute="trailing" id="9pS-cQ-DCG"/>
                             <constraint firstItem="Xd1-E3-0fb" firstAttribute="centerY" secondItem="ooj-XV-463" secondAttribute="centerY" id="F9b-JN-vSl"/>
                             <constraint firstItem="ooj-XV-463" firstAttribute="leading" secondItem="3cu-kB-beg" secondAttribute="leading" id="Ffs-6l-ttc"/>
-                            <constraint firstItem="3cu-kB-beg" firstAttribute="trailing" secondItem="xi1-8s-EgV" secondAttribute="trailing" id="Hgv-8g-aEz"/>
+                            <constraint firstItem="3cu-kB-beg" firstAttribute="trailing" secondItem="xi1-8s-EgV" secondAttribute="trailing" constant="10" id="Hgv-8g-aEz"/>
                             <constraint firstItem="YMa-ya-U6x" firstAttribute="top" secondItem="xaY-XI-mrl" secondAttribute="bottom" constant="7.5" id="Ke4-kn-t8r"/>
                             <constraint firstItem="xaY-XI-mrl" firstAttribute="leading" secondItem="3cu-kB-beg" secondAttribute="leading" constant="10" id="Pjf-yX-0WZ"/>
                             <constraint firstItem="YMa-ya-U6x" firstAttribute="leading" secondItem="3cu-kB-beg" secondAttribute="leading" constant="10" id="RtV-Ki-wWy"/>
