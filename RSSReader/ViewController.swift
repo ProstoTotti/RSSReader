@@ -22,14 +22,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.indicator.startAnimating()
         APIManager.sharedInstance.getRSSFeedResponse { (response, status) in
-            self.indicator.stopAnimating()
             try! self.realm.write {
                 if !self.realm.isEmpty {
                     self.realm.deleteAll()
                 }
                 for item in response!.items {
                     let newNews = News()
-                    newNews.descriptionNews = APIManager.sharedInstance.parseDescriptionRSS(item.description)!
+                    newNews.descriptionNews = APIManager.sharedInstance.parseDescriptionRSS(item.description)
                     newNews.imageURL = item.imagesFromDescription!.first!
                     newNews.imageURLContent = item.mediaContent!
                     newNews.title = item.title!
@@ -37,6 +36,7 @@ class ViewController: UIViewController {
                     self.realm.add(newNews)
                 }
             }
+            self.indicator.stopAnimating()
             self.performSegue(withIdentifier: "main", sender: nil)
             
         }

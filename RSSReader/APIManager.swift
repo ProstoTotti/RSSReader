@@ -30,7 +30,7 @@ class APIManager {
         }
     }
     
-    func parseDescriptionRSS(_ someString: String) -> String? {
+    func parseDescriptionRSS(_ someString: String) -> String {
         let strText = someString.range(of: ">(.*)<", options: .regularExpression, range: nil, locale: nil)
         if let someRange = strText {
             let some = someString[someRange]
@@ -40,7 +40,7 @@ class APIManager {
             let stringQwerty = String(qwerty).replacingOccurrences(of: "\\", with: "")
             return stringQwerty
         }
-        return nil
+        return "Error parse Text"
     }
     
 }

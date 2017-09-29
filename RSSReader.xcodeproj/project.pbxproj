@@ -27,7 +27,6 @@
 		61AF43E31F753CA500C9D1CF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		61CFDCD51F74FBA800ED86F0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		61CFDCD71F750AB300ED86F0 /* MainTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
-		61E05A731F75383D00FE25BD /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
 		61E544C91F73EE1E005EE8BC /* RSSReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E544CC1F73EE1E005EE8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61E544CE1F73EE1E005EE8BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +87,6 @@
 				617EC07B1F756D6A0048500C /* MainTableViewCell.swift */,
 				61AF43E31F753CA500C9D1CF /* DetailViewController.swift */,
 				619373EC1F751C98008CAE45 /* New.swift */,
-				61E05A731F75383D00FE25BD /* Placeholder.png */,
 				61CFDCD71F750AB300ED86F0 /* MainTVC.swift */,
 				61E544D31F73EE1E005EE8BC /* Assets.xcassets */,
 				61E544D51F73EE1E005EE8BC /* LaunchScreen.storyboard */,
